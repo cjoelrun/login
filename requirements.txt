@@ -1,0 +1,6 @@
+configparser==3.3.0r2
+docopt==0.6.1
+pexpect==2.4
+pycrypto==2.6
+requests==2.0.0
+wsgiref==0.1.2
