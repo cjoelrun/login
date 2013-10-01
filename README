@@ -1,7 +1,7 @@
 login.py
 
   `login` is a tool for logging into an instance's respective compute node.
-  It uses information parsed from othree and variables from a user-generated 
+  It uses information parsed from othree and variables from a user-generated
   configuration file to consistently remote into machines.
 
 Usage
@@ -14,12 +14,12 @@ Output
   xxx.xxx.xxx.xxx is its Hypervisor.  Using that IP address
   Last login: xxx xxx xx xx:xx:xx xxxx from xxx.xxx.xxx.xxx
   Type "xsconsole" for access to the management console.
-  [root@xx-xx-xx-xxxxxx ~]# 
+  [root@xx-xx-xx-xxxxxx ~]#
 
 Installation
 
   Clone the git repository to download the files locally:
-  
+
     git clone https://github.com/jpmontez/login.git
 
   Then navigate into the directory, and install the dependencies with `pip`:
@@ -45,11 +45,10 @@ Configuration
   bastion, username, and password variables:
 
     [login]
-    ohthree  = 'https://reports.ohthree.com/%s/instance/%s/json'
+    ohthree  = 'https://reports.ohthree.com'
     bastion  = BASTION_HOSTNAME
     username = SSO_USER
     password = SSO_PASS
     regions  = ORD, DFW, LON, SYD, IAD
 
   Now you're ready to use the script!
-
